@@ -70,6 +70,11 @@ a {
 	aside {
 		@include span-columns(3);
 	}
+	a {
+		color: white;
+		border-bottom: 2px solid $yellow;
+		&:hover { color: $yellow;}
+	}
 }
 
 .main2 {
