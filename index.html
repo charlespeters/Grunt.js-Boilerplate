@@ -1,98 +1,46 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Grunt.js-boilerplate by charlespeters</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/charlespeters/Grunt.js-Boilerplate">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Grunt.js-boilerplate</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/charlespeters/Grunt.js-Boilerplate/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/charlespeters/Grunt.js-Boilerplate/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/charlespeters">charlespeters</a> can be found on <a href="https://github.com/charlespeters/Grunt.js-Boilerplate">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
+	<title>Gruntin'</title>
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	
+	
+	<section class="hero">
+		<h1>Gruntin' Along</h1>
+		<img src="img/grunt-logo.svg">
+	</section>
+	<section class="main">
+		<div class="container">
+		<article>
+			<h2>Grunt.js is a Javascript Task Runner</h2>
+			<p>It's guaranteed to help you not be so afraid of a command-line interface.*</p>
+			<p>Can you image something you wanted a robot to do? Compile your SASS? Push files to your FTP? Bring you a sandwich? Create a new Git repository? You could use half a dozen different apps with a GUI to do those things for you or you could just setup Grunt and get to work and like not run a bunch of applications you don't need.</p>
+			<p>Grunt.js lets you automate those tasks, that you'll likely do every other minute with very little effort. By little effort, I mean typing some commands in the Terminal. Through some Node.js magic, boom automated workflow</p>
+			<p>* Psssshhhh There are No Guarantees in Life</p>
+		</article>
+		<aside><img src="" alt="" width="150px" height="300px"/></aside>
+		</div>
+	</section>
+	<section class="main2">
+		<h2>Oh Boy, That Sounds Complicated</h2>
+		<p>Yeah, well hasn't everything with web design seemed complicated? At first it probably did. But most of us took it bit by bit, cleared a path through it and lived to tell the tale. There is somewhat of a learning curve. But guess what? It's not so complicated. Chris Coyier gave us a great introduction with his <a href="http://24ways.org/2013/grunt-is-not-weird-and-hard/" target="_blank">24 Ways post</a> &amp; <a href="http://css-tricks.com/video-screencasts/130-first-moments-grunt/" target="_blank">a nice video tutorial on CSS-Tricks</a>.</p>
+		<p>Basically, you setup two files in your root folder, package.json and a Gruntfile.js/Gruntfile.coffee. Hope out to the command line  and install Node.js and the CGI for Grunt, globally. Then you change your directory to back to your root and choose some tasks to run. For instance, compiling your SASS files into CSS. Install the Node module that automates that task, configure it and you're done.</p>
+	</section>
+	<section class="main">
+		<h3>View My Grunt Setup on Github</h3>
+	</section>
+	<section class="main3">
+		<article class="container">
+			<h2>But what about Codekit?</h2>
+			<img src="img/codekit-logo.png" alt="" />
+			<p>Well what about Codekit? It's not going away. It's still really useful software. Codekit handles certain things very well, like detecting which mixin library you wanted to include without installing it manually. It can preprocess your CSS really well if you're using LESS or SASS and then inject those styles in the browser as your working. It'll concatenate your Javascript files &amp; optimize your images for you.</p>
+			<p>It's lacking in the way of customization. It does the things I mentioned above well (sans maybe concatenating your Javascript) but the list ends there. It doesn't do much more for you. So if you wanted it to create image sprites for you or spin up a local server or push to git & your FTP, you need another application to do those things.</p>
+			<p>Personally, I think Codekit will get better over time and give more options, more flexibility. But in really, Codekit shouldn't bend and break for every whim, need or idea of how you work. That molds and changes from day to day and project to project. And so should your solutions. </p>
+			<p></p>
+		</article>
+	</section>
+</body>
 </html>

@@ -1,0 +1,13 @@
+@mixin play($style: normal, $size: 3rem){
+	font: $style 900 $size/1.5 'Playfair Display', serif;
+};
+
+@mixin fjord(){
+	font: 400 100%/1.5 'Fjord One', serif;
+};
+
+@mixin anti(){
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;	
+};
