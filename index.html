@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8" />
 	<title>Gruntin'</title>
-	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/main.prefixed.css" />
 </head>
 <body>
 	
@@ -11,36 +11,41 @@
 	<section class="hero">
 		<h1>Gruntin' Along</h1>
 		<img src="img/grunt-logo.svg">
+        <a href="https://gist.github.com/charlespeters/8146173"><button>View My Grunt Setup on Github</button></a><a href="https://github.com/charlespeters/Grunt.js-Boilerplate"><button>Full Boilerplate Here</button></a>
 	</section>
 	<section class="main">
-		<div class="container">
-		<article>
+
+		<article class="container">
 			<h2>Grunt.js is a Javascript Task Runner</h2>
 			<p>It's guaranteed to help you not be so afraid of a command-line interface.*</p>
-			<p>Can you image something you wanted a robot to do? Compile your SASS? Push files to your FTP? Bring you a sandwich? Create a new Git repository? You could use half a dozen different apps with a GUI to do those things for you or you could just setup Grunt and get to work and like not run a bunch of applications you don't need.</p>
+			<p>Can you image something you wanted a robot to do? Compile your SASS? Deploy files to your FTP? Bring you a sandwich? Spin up a server? Concatenate & uglify all your Javascript files?  You could use half a dozen different apps with a GUI to do those things for you or you could just setup Grunt and get to work and like not run a bunch of applications you don't need.</p>
 			<p>Grunt.js lets you automate those tasks, that you'll likely do every other minute with very little effort. By little effort, I mean typing some commands in the Terminal. Through some Node.js magic, boom automated workflow</p>
 			<p>* Psssshhhh There are No Guarantees in Life</p>
 		</article>
-		<aside><img src="" alt="" width="150px" height="300px"/></aside>
-		</div>
 	</section>
 	<section class="main2">
 		<h2>Oh Boy, That Sounds Complicated</h2>
 		<p>Yeah, well hasn't everything with web design seemed complicated? At first it probably did. But most of us took it bit by bit, cleared a path through it and lived to tell the tale. There is somewhat of a learning curve. But guess what? It's not so complicated. Chris Coyier gave us a great introduction with his <a href="http://24ways.org/2013/grunt-is-not-weird-and-hard/" target="_blank">24 Ways post</a> &amp; <a href="http://css-tricks.com/video-screencasts/130-first-moments-grunt/" target="_blank">a nice video tutorial on CSS-Tricks</a>.</p>
 		<p>Basically, you setup two files in your root folder, package.json and a Gruntfile.js/Gruntfile.coffee. Hope out to the command line  and install Node.js and the CGI for Grunt, globally. Then you change your directory to back to your root and choose some tasks to run. For instance, compiling your SASS files into CSS. Install the Node module that automates that task, configure it and you're done.</p>
 	</section>
-	<section class="main">
-		<h3><a href="https://gist.github.com/charlespeters/8146173">View My Grunt Setup on Github</a></h3>
-	</section>
 	<section class="main3">
 		<article class="container">
 			<h2>But what about Codekit?</h2>
-			<img src="img/codekit-logo.png" alt="" />
+			<img src="img/dist/codekit-logo.png" alt="" />
 			<p>Well what about Codekit? It's not going away. It's still really useful software. Codekit handles certain things very well, like detecting which mixin library you wanted to include without installing it manually. It can preprocess your CSS really well if you're using LESS or SASS and then inject those styles in the browser as your working. It'll concatenate your Javascript files &amp; optimize your images for you.</p>
 			<p>It's lacking in the way of customization. It does the things I mentioned above well (sans maybe concatenating your Javascript) but the list ends there. It doesn't do much more for you. So if you wanted it to create image sprites for you or spin up a local server or push to git & your FTP, you need another application to do those things.</p>
 			<p>Personally, I think Codekit will get better over time and give more options, more flexibility. But in really, Codekit shouldn't bend and break for every whim, need or idea of how you work. That molds and changes from day to day and project to project. And so should your solutions. </p>
 			<p></p>
 		</article>
+    	<article class="container">
+        	<h2>...Gulp?</h2>
+        	<img src="img/dist/gulp-2x.png" alt="" />
+        	<p>Gulp.js is another task manager. It's the new kid in town. According to <a href="http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/">Mark Dalgleish</a>, it's getting there and growing. I'm willing to take a look into it, but it might be awhile until it finds it's way into my workflow.</p>
+        	<p>If you come across any great tutorials, <a href="https://twitter.com/charlespeters">tweet me</a> a link?</p>
+    	</article>
 	</section>
+	<footer>
+    	<a href="http://charlespeters.net/">Charles Peters</a> | <a href="https://twitter.com/charlespeters">Twitter</a> | <a href="https://github.com/charlespeters">Github</a>
+	</footer>
 </body>
 </html>

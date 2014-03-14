@@ -14,7 +14,9 @@
 	@include anti;
 }
 
-
+body {
+    @include fjord;
+}
 p {
 	@include fjord;
 	font-size: 1.25rem;
@@ -22,40 +24,57 @@ p {
 	margin: 1rem auto 0;
 	max-width: 40rem;
 	color: #333;
-}	
+}
 
 a {
 	color: $burntorange;
 	text-decoration: none;
 	&:hover {color: $yellow;}
-	
+
 }
 
 .hero {
 	@include linear-gradient(to top, $liteorange, $orange);
 	padding: 1.5rem;
 	text-align: center;
-	
+
 	img {display: block; margin: 0 auto;}
-	
-	h1 {@include play(italic, 8.5rem); color: $yellow;}
+
+	h1 {@include play(italic, 900%); color: $yellow; }
+	button {
+	    margin: .5rem auto;
+    	@include fjord;
+    	text-transform: uppercase;
+    	color: $burntorange;
+    	padding: 1.5rem;
+    	border-radius: 1rem;
+    	background: $yellow;
+    	-webkit-appearance: none;
+    	border: 2px $liteorange solid;
+    	&:hover {
+        	background: $burntorange;
+        	color: white;
+    	}
+    	&:focus {
+        	outline: none;
+    	}
+	}
 }
 .container {
 	@include outer-container;
-
 }
 .main {
 	@include linear-gradient(to top, $orange, $burntorange);
 	color: $offwhite;
 	padding: 1.5rem;
 	h2{
-		@include play(normal, 5rem);
+		@include play(italic, 5rem);
+		text-align: center;
 	}
 	p{
-		margin-left: 0;
-		margin-right: 0;
-		color: white;
-		&:first-of-type {@include play(italic, 2.5rem);}
+		margin: 0 auto 1rem;
+        color: white;
+		&:first-of-type { font: 900 2.5rem/1.5 'Playfair Display', serif; }
 		&:last-of-type {@include play(italic, 1.875rem);}
 	}
 	h3 {
@@ -63,12 +82,6 @@ a {
 		color: $offwhite;
 		letter-spacing: 5px;
 		text: {align: center; transform: uppercase;}
-	}
-	article {
-		@include span-columns(9);
-	}
-	aside {
-		@include span-columns(3);
 	}
 	a {
 		color: white;
@@ -88,9 +101,9 @@ a {
 	background: $offwhite;
 	padding: 1rem;
 	h2 {
-		@include play(italic, 7rem);
+		@include play(italic, 5rem);
 		line-height: 1.125;
-		margin: 0 0 .5rem 0;
+		margin: 0 0 1rem 0;
 		text-align: center;
 		color: $burntorange;
 	}
@@ -98,10 +111,23 @@ a {
 		max-width: 40rem;
 	}
 		img {
-		display: block;
-		opacity: .4;
-		margin: 0 auto;
-		max-width: 15%;
-		height: auto;
+			display: block;
+			opacity: .4;
+			margin: 0 auto;
+			max-width: 15%;
+			height: auto;
 	}
+}
+
+footer {
+    background: $burntorange;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    a {
+        color: $yellow;
+        &:hover { color: white; }
+    }
 }
