@@ -28,6 +28,4 @@ build/
 ---js/
 ---fonts/
 ---index.html
---
-
 ```
