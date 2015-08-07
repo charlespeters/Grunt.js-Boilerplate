@@ -1,5 +1,4 @@
-Grunt.js-Boilerplate
----
+# Grunt.js-Boilerplate
 
 __Deprecated: This project is no longer update. I recommend using Gulp.js and looking through all the [recipes](https://github.com/gulpjs/gulp/tree/master/docs/recipes) for your project's build process.__
 
